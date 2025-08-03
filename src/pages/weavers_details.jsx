@@ -104,7 +104,7 @@ const WeaversDeatils = () => {
       fabricType: 'Wool',
       maxOrder: 1000,
       logo: 'placeholder/150x100?text=Kashmiri',
-      image: 'placeholder/300x300?text=Kashmir+Weavers',
+      image: 'KashmirArtisan',
       description: 'Specializing in luxurious pashmina and cashmere shawls, this collective maintains centuries-old techniques of hand spinning and weaving. Their products feature intricate kani and sozni embroidery work.',
       members: '60+',
       experience: '4 Gen',
@@ -199,7 +199,7 @@ const WeaversDeatils = () => {
       {/* CSS Styles */}
       <style>{`
         :root {
-          --primary-color: #4a6fa5;
+          --primary-color: #f1eae3;
           --secondary-color: #166088;
           --accent-color: #4fc3f7;
           --light-color: #f8f9fa;
@@ -215,7 +215,7 @@ const WeaversDeatils = () => {
         }
 
         body {
-          background-color: #f5f5f5;
+          background-color: #fffcf8;
           color: #333;
           line-height: 1.6;
         }
@@ -234,7 +234,7 @@ const WeaversDeatils = () => {
         }
 
         .logo {
-          color: white;
+          color: black;
           font-size: 1.8rem;
           font-weight: bold;
           display: flex;
@@ -258,7 +258,7 @@ const WeaversDeatils = () => {
         .nav-button {
           background: none;
           border: none;
-          color: white;
+          color: black;
           cursor: pointer;
           font: inherit;
           font-weight: 500;
@@ -403,7 +403,7 @@ const WeaversDeatils = () => {
         }
 
         .search-bar button:hover {
-          background-color: var(--secondary-color);
+          background-color: red;
         }
 
         /* Weaver Companies Section */
@@ -414,7 +414,7 @@ const WeaversDeatils = () => {
         .section-title {
           font-size: 1.5rem;
           margin-bottom: 1rem;
-          color: var(--secondary-color);
+          color: red;
           display: flex;
           align-items: center;
         }
@@ -664,10 +664,10 @@ const WeaversDeatils = () => {
         </div>
         <ul className="nav-links">
           <li><button className="nav-button">Home</button></li>
+          <li><button className="nav-button">About</button></li>
           <li><button className="nav-button">Weavers</button></li>
           <li><button className="nav-button">Products</button></li>
           <li><button className="nav-button">Orders</button></li>
-          <li><button className="nav-button">About</button></li>
         </ul>
       </nav>
 
