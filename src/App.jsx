@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
 import HomePage from './pages/home';
-import {BrowserRouter as Router,Routes,Route} from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LoginSection from './components/LoginSection';
-import WeaverLogin from './pages/weaver_login';
 
 function App() {
   const [showLogin, setShowLogin] = useState(false);
@@ -14,14 +13,13 @@ function App() {
 
   return (
     <div className="App">
-    <Router>
-     <Routes>
-      <Route path="/" element={<HomePage/>}/>
-      <Route path="/supplier-login" element={<LoginSection toggleLogin={toggleLogin}/>}/>
-            <Route path="/weaver-login" element={<WeaverLogin/>}/>
-
-     </Routes>
-    </Router>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/supplier-login" element={<LoginSection toggleLogin={toggleLogin} />} />
+          <Route path="/weaver-login" element={<weaver_login />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
