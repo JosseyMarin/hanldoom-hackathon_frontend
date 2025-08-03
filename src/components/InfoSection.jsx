@@ -1,17 +1,19 @@
 import React from 'react';
+import TraditionalCraftsmanship from '../assets/Traditional-Craftsmanship.jpg';
+import Suitableandauthentic from '../assets/Suitable-and-Authentic.jpg';
 
 const InfoSection = () => {
   const infoCards = [
     {
       title: "Traditional Craftsmanship",
       description: "Handloom weaving is an ancient craft that has been passed down through generations, preserving cultural heritage and traditional techniques.",
-      image: "https://images.unsplash.com/photo-1595425964075-5d3a8383a1f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      image: TraditionalCraftsmanship,
       alt: "Handloom weaving"
     },
     {
-      title: "Sustainable Fashion",
+      title: "Sustainable and Authentic",
       description: "Handloom products are eco-friendly, using natural fibers and minimal energy compared to machine-made textiles.",
-      image: "https://images.unsplash.com/photo-1516762689617-e1cffcef479d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      image: Suitableandauthentic,
       alt: "Sustainable fashion"
     },
     {

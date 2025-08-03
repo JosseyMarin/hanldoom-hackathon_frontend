@@ -16,7 +16,7 @@ const HomePage = () => {
     <>
       <Navbar toggleLogin={toggleLogin} />
       <Hero />
-
+      
       <InfoSection />
       <WeaversSection />
       <Footer />
