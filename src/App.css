@@ -22,7 +22,7 @@ body {
 
 /* Navigation Bar */
 .navbar {
-  background-color: purple;
+  background-color: #f1eae3;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -34,7 +34,7 @@ body {
 }
 
 .logo {
-  color: white;
+  color: black;
   font-size: 1.8rem;
   font-weight: bold;
   text-decoration: none;
@@ -57,7 +57,7 @@ body {
 }
 
 .nav-links a {
-  color: white;
+  color: black;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
@@ -146,16 +146,16 @@ body {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1595425964075-5d3a8383a1f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  background-image: url('/src/assets/Hero-Section-bg-img.jpg');
   background-size: cover;
   background-position: center;
-  height: 60vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
+  color: #f1eae3;
   padding: 0 2rem;
 }
 
@@ -199,7 +199,7 @@ body {
 .section-title {
   text-align: center;
   margin-bottom: 3rem;
-  color: var(--secondary-color);
+  color: black;
   font-size: 2.2rem;
 }
 
@@ -244,7 +244,7 @@ body {
 
 .card-content h3 {
   margin-bottom: 1rem;
-  color: var(--primary-color);
+  color: red;
 }
 
 /* Weavers Section */
