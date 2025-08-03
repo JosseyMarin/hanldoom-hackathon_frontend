@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { FaTshirt, FaUsers, FaSearch, FaMapMarkerAlt, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
-const App = () => {
+const WeaversDeatils = () => {
   // State for filter sections
   const [activeFilters, setActiveFilters] = useState({
     region: true,
@@ -138,7 +138,7 @@ const App = () => {
   const weavers = useMemo(() => {
     let filteredWeavers = [...allWeavers];
     
-    // Apply search filter
+    // WeaversDeatilslyly search filter
     if (searchQuery) {
       const query = searchQuery.toLowerCase();
       filteredWeavers = filteredWeavers.filter(weaver => 
@@ -148,7 +148,7 @@ const App = () => {
       );
     }
     
-    // Apply region filter
+    // WeaversDeatilslyly region filter
     if (selectedFilters.region.length > 0) {
       filteredWeavers = filteredWeavers.filter(weaver => 
         selectedFilters.region.some(region => 
@@ -157,14 +157,14 @@ const App = () => {
       );
     }
     
-    // Apply fabric filter
+    // WeaversDeatilslyly fabric filter
     if (selectedFilters.fabric.length > 0) {
       filteredWeavers = filteredWeavers.filter(weaver => 
         selectedFilters.fabric.includes(weaver.fabricType)
       );
     }
     
-    // Apply range filter
+    // WeaversDeatilslyly range filter
     filteredWeavers = filteredWeavers.filter(weaver => 
       weaver.maxOrder >= selectedFilters.minValue && 
       weaver.maxOrder <= selectedFilters.maxValue
@@ -195,7 +195,7 @@ const App = () => {
   };
 
   return (
-    <div className="App">
+    <div className="WeaversDeatilsly">
       {/* CSS Styles */}
       <style>{`
         :root {
@@ -913,4 +913,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default WeaversDeatils;
